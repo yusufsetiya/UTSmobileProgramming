@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/baseline_donut_large_24"
+                android:drawableStart="@drawable/baseline_donut_large_24"
+                android:drawablePadding="8dp"
+                android:text="NIK"/>
+
+            <EditText
+                android:id="@+id/editNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:hint="Masukan NIK anda (Max 16 angka)"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawableStart="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="8dp"
+                android:text="Nama Lengkap"/>
+
+            <EditText
+                android:id="@+id/editNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:hint="Masukan Nama Lengkap Anda"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/calendar_days_svgrepo_com"
+                android:drawableStart="@drawable/calendar_days_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Tanggal Lahir"/>
+
+            <EditText
+                android:id="@+id/editTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:focusable="false"
+                android:hint="Pilih Tanggal Lahir Anda"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/place_marker_svgrepo_com"
+                android:drawableStart="@drawable/place_marker_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Tempat Lahir"/>
+
+            <EditText
+                android:id="@+id/editTempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:inputType="textAutoComplete"
+                android:hint="Masukan Tempat Lahir Anda"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/home_17_svgrepo_com"
+                android:drawableStart="@drawable/home_17_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Alamat"/>
+
+            <EditText
+                android:id="@+id/editAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:minLines="1"
+                android:maxLines="2"
+                android:inputType="text"
+                android:hint="Masukan Alamat Anda"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/user_svgrepo_com"
+                android:drawableStart="@drawable/user_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Usia"/>
+
+            <TextView
+                android:id="@+id/editUsia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="16sp"
+                android:text="-"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/gender_mark_1_svgrepo_com"
+                android:drawableStart="@drawable/gender_mark_1_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Jenis Kelamin"/>
+
+            <Spinner
+                android:id="@+id/editGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/spinner_border"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/country_direction_location_map_navigation_pin_svgrepo_com"
+                android:drawableStart="@drawable/country_direction_location_map_navigation_pin_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Kewarganegaraan"/>
+
+            <RadioGroup
+                android:id="@+id/groupCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp">
+                <RadioButton
+                    android:id="@+id/radioWni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="WNI"/>
+                <RadioButton
+                    android:id="@+id/radioWna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="WNA"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/skill_svgrepo_com"
+                android:drawableStart="@drawable/skill_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Bidang Kompetensi"/>
+
+            <CheckBox
+                android:id="@+id/cDevelop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Development &amp; IT"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"/>
+            <CheckBox
+                android:id="@+id/cService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"/>
+            <CheckBox
+                android:id="@+id/cDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design Creative"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"/>
+            <CheckBox
+                android:id="@+id/cWriting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writing"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"/>
+            <CheckBox
+                android:id="@+id/cFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finance &amp; Accounting"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/email_1573_svgrepo_com"
+                android:drawableStart="@drawable/email_1573_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:text="Email"/>
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:hint="Masukan Email Anda"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:backgroundTint="#B53008"
+                android:text="Reset"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#fbd00d"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
