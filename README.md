@@ -21,9 +21,9 @@ Project ini adalah tugas ujian tengah semester dari mata kuliah pemrograman mobi
 ## Screenshots
 Berikut adalah beberapa screenshoot dari aplikasi:
 - Splash Screen<br>
-<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/8121b566-6a87-4ac0-ba67-0551dd241923" width="250"><br>
+<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/8121b566-6a87-4ac0-ba67-0551dd241923" width="250">
 - Form Inputan Biodata<br>
-<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/1007aeda-c9f4-4cd3-bccf-8efd6f81e454" width="250"><br>
+<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/1007aeda-c9f4-4cd3-bccf-8efd6f81e454" width="250">
 - Hasil Pengisian Biodata<br>
 <img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/5b3a9a19-8331-4f40-843b-5b77fadd3b59" width="250">
 
