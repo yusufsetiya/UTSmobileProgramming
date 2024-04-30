@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,267 +8,328 @@
     android:orientation="vertical"
     tools:context=".ViewsActivity">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="NIK "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vNik"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Nama Lengkap "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vNama"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Tanggal Lahir "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vTanggal"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Alamat "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vAlamat"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Usia "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vUsia"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Jenis Kelamin "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vGender"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Kewarganegaraan "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vCountry"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Bidang Kopetensi "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vKompeten"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <!-- Kolom 1 -->
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.6"
-                android:text="Email "
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-
-            <!-- Kolom 2 -->
-            <TextView
-                android:id="@+id/vEmail"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text=""
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:textColor="@color/black"/>
-        </TableRow>
-    </TableLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
-        <Button
-            android:id="@+id/back"
-            android:layout_width="350dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Kembali"
-            android:textSize="16sp"
-            android:backgroundTint="#BACE0D"/>
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:text="Hasil Biodata Diri"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#BAB2AF"
+                android:textAlignment="center"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Berikut adalah hasil dari biodata diri anda yang sudah anda sisikan sebelumnya"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="NIK "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vNik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Nama Lengkap "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vNama"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Tanggal Lahir "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vTanggal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Tempat Lahir "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vTempat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Alamat "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vAlamat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Usia "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vUsia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Jenis Kelamin "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Kewarganegaraan "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Bidang Kompetensi "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vKompeten"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- Kolom 1 -->
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Email "
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <!-- Kolom 2 -->
+                <TextView
+                    android:id="@+id/vEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Kembali"
+                android:textSize="16sp"
+                android:backgroundTint="#fbd00d"/>
+        </LinearLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

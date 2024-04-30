@@ -13,26 +13,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/baseline_donut_large_24"
-                android:drawableStart="@drawable/baseline_donut_large_24"
                 android:drawablePadding="8dp"
-                android:text="NIK"/>
-
-            <EditText
-                android:id="@+id/editNik"
-                android:layout_width="match_parent"
+                android:text="Registrasi Mahasiswa Baru"/>
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="16sp"
-                android:inputType="number"
-                android:hint="Masukan NIK anda (Max 16 angka)"/>
+                android:textSize="12sp"
+                android:textColor="#BAB2AF"
+                android:textAlignment="center"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Lengkapi data diri anda dibawah ini untuk keperluan mengikuti ujian tengah semester"/>
 
         </LinearLayout>
         <LinearLayout
@@ -44,7 +43,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/baseline_donut_large_24"
+                android:drawableStart="@drawable/baseline_donut_large_24"
+                android:drawablePadding="8dp"
+                android:text="Nomor Induk Kependudukan"/>
+
+            <EditText
+                android:id="@+id/editNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:hint="Masukan NIK "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* NIK harus berisi 16 karakter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
                 android:drawableStart="@drawable/baseline_supervised_user_circle_24"
@@ -58,7 +90,15 @@
                 android:layout_marginTop="6dp"
                 android:inputType="text"
                 android:textSize="16sp"
-                android:hint="Masukan Nama Lengkap Anda"/>
+                android:hint="Masukan Nama Lengkap "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Nama lengkap harus sesuai KTP"/>
 
         </LinearLayout>
         <LinearLayout
@@ -69,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/calendar_days_svgrepo_com"
                 android:drawableStart="@drawable/calendar_days_svgrepo_com"
@@ -83,7 +123,15 @@
                 android:layout_marginTop="6dp"
                 android:textSize="16sp"
                 android:focusable="false"
-                android:hint="Pilih Tanggal Lahir Anda"/>
+                android:hint="dd/mm/yyyy"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Pilih tanggal lahir sesuai KTP"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,7 +141,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/place_marker_svgrepo_com"
                 android:drawableStart="@drawable/place_marker_svgrepo_com"
@@ -107,7 +155,15 @@
                 android:layout_marginTop="6dp"
                 android:textSize="16sp"
                 android:inputType="textAutoComplete"
-                android:hint="Masukan Tempat Lahir Anda"/>
+                android:hint="Masukan Tempat Lahir"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Isikan kota tempat lahir anda"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,7 +173,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/home_17_svgrepo_com"
                 android:drawableStart="@drawable/home_17_svgrepo_com"
@@ -130,10 +186,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:textSize="16sp"
-                android:minLines="1"
                 android:maxLines="2"
-                android:inputType="text"
-                android:hint="Masukan Alamat Anda"/>
+                android:inputType="textMultiLine"
+                android:hint="Alamat lengkap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Isikan alamat lengkap tempat tinggal anda"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,7 +206,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/user_svgrepo_com"
                 android:drawableStart="@drawable/user_svgrepo_com"
@@ -155,9 +218,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
+                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="25dp"
                 android:textSize="16sp"
                 android:text="-"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Usia anda akan terhitung otomatis"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -168,7 +240,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/gender_mark_1_svgrepo_com"
                 android:drawableStart="@drawable/gender_mark_1_svgrepo_com"
@@ -181,6 +253,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
                 android:background="@drawable/spinner_border"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -192,7 +265,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/country_direction_location_map_navigation_pin_svgrepo_com"
                 android:drawableStart="@drawable/country_direction_location_map_navigation_pin_svgrepo_com"
@@ -229,7 +302,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/skill_svgrepo_com"
                 android:drawableStart="@drawable/skill_svgrepo_com"
@@ -291,7 +364,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/email_1573_svgrepo_com"
                 android:drawableStart="@drawable/email_1573_svgrepo_com"
@@ -306,6 +379,14 @@
                 android:textSize="16sp"
                 android:inputType="textEmailAddress"
                 android:hint="Masukan Email Anda"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="#BAB2AF"
+                android:text="* Gunakan alamat email yang aktif"/>
 
         </LinearLayout>
         <LinearLayout
@@ -322,7 +403,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:backgroundTint="#B53008"
-                android:text="Reset"/>
+                android:text="Bersihkan"/>
 
             <Button
                 android:id="@+id/submit"
