@@ -26,7 +26,6 @@ Berikut adalah beberapa screenshoot dari aplikasi:
 - Hasil Pengisian Biodata<br>
 <img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/1007aeda-c9f4-4cd3-bccf-8efd6f81e454" width="250"><br>
 
-
 ## Made By
 
 Project ini dibuat sepenuhnya oleh:
