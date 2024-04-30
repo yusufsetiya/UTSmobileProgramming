@@ -24,10 +24,10 @@ Berikut adalah beberapa screenshoot dari aplikasi:
 - Form Inputan Biodata<br>
 <img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/5b3a9a19-8331-4f40-843b-5b77fadd3b59" width="250"><br>
 - Hasil Pengisian Biodata<br>
-<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/1007aeda-c9f4-4cd3-bccf-8efd6f81e454" width="250">
+<img src="https://github.com/yusufsetiya/UTSmobileProgramming/assets/72720312/1007aeda-c9f4-4cd3-bccf-8efd6f81e454" width="250"><br>
 
 
-## Used By
+## Made By
 
 Project ini dibuat sepenuhnya oleh:
 
