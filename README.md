@@ -1,7 +1,5 @@
 
 # UTS Pemrograman Mobile 
-Project ini adalah tugas ujian tengah semester dari mata kuliah pemrograman mobile. Project ini memiliki kegunaan sederhana yaitu untuk pendataan biodata mahasiswa. Project ini dibangun menggunakan bahasa pemrograman java.
-
 
 
 ## Deskripsi
